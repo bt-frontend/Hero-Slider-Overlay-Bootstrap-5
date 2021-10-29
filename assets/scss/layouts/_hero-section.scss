@@ -1,0 +1,45 @@
+
+.pt-carousel-slider {
+
+    // Hero Image
+    .pt-slider-img {
+        aspect-ratio: 2/0.8;
+        object-fit: cover;
+    
+        @media #{$mobile} {
+            height: 400px!important;
+        }
+    }
+
+    // Hero Carousel Overlay & Text
+    .pt-hero-carousel{
+        .pt-slider-overlay {
+            position: absolute;
+            top: 0;
+            color: $base-color;
+            background: rgba(0,0,0,0.4);
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+
+            .pt-hero-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-transform: uppercase;
+                font-size: 2.3em;
+            
+                .pt-hero-btn {
+                    width: 140px;
+                    color: $base-color;
+                    background: $primary-color;
+                }
+                
+            }
+            
+        }
+    }
+
+}
+
+
